@@ -29,12 +29,10 @@ window.onload = function() {
     $("#single-course-select").on("click", function(){
         var courseText = document.getElementById("course-select").value;
         var programCode = getProgram(courseText);
-        //var programCode = "ASD";
         $(".row1.col0").text(programCode);
-        //$(".row1.col0").text(courseText);
         
-        //$(".row1.col1").text("1");
-        //$(".col2, .col3").text("2");
+        
+        
         $(".row9, .row10").hide();
         var i, j = 0;
         for (i = 0; i < cellArray.length; i++) { 
