@@ -2,7 +2,7 @@ html {
   min-height: 100vh;
 }
 body {
-  min-height: 100vh;
+  min-height: 90%;
 }
 
 div.table {
@@ -10,7 +10,7 @@ div.table {
   border-width: 2px;
   box-sizing: border-box;
   margin: 0 40% 0 0;
-  height: 100vh;
+  height: 100%;
   width: 60%;
 }
 div.table-row {
