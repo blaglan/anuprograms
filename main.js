@@ -29,7 +29,8 @@ function readProgramCourses(programCode) {
         }
     }
     txtFile.send(null);
-    return lines[0];
+    return allText;
+    //return lines[0];
     //return "data/programs/" + programCode.toLowerCase() + ".txt";
 }
 
