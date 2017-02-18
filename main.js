@@ -2,7 +2,7 @@
     
 });*/
 
-/*function getProgram(courseText) {
+function getProgram(courseText) {
     var programCode = "";
     var i = 0;
     
@@ -11,7 +11,7 @@
       i++;
     }
     return programCode;
-}*/
+}
 
 window.onload = function() {
     var select = document.getElementById("course-select");
@@ -28,10 +28,10 @@ window.onload = function() {
     $(".col4").text("3");
     $("#single-course-select").on("click", function(){
         var courseText = document.getElementById("course-select").value;
-        //var programCode = getProgram(courseText);
+        var programCode = getProgram(courseText);
         //var programCode = "ASD";
-        //$(".row1.col0").text(programCode);
-        $(".row1.col0").text(courseText);
+        $(".row1.col0").text(programCode);
+        //$(".row1.col0").text(courseText);
         
         //$(".row1.col1").text("1");
         //$(".col2, .col3").text("2");
