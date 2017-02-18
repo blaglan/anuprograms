@@ -22,6 +22,7 @@ function readProgramCourses(programCode) {
     txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.onreadystatechange = function() {
         if (txtFile.readyState === 4) {  // document is ready to parse.
+            allText = "g'day?";
             if (txtFile.status === 200 || txtFile.status == 0) {  // file is found
                 allText = txtFile.responseText; 
                 lines = txtFile.responseText.split("\n");
