@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    var courseText = document.getElementByID("course-select").innerHTML;
+    //var courseText = document.getElementByID("course-select").innerHTML;
     //var programCode = getProgram(courseText);
-    var programCode = "ASD";
-    $(".row1.col0").text(programCode);
+    //var programCode = "ASD";
+    //$(".row1.col0").text(programCode);
     
     var cellArray = [[".row1.col1", ".row1.col2", ".row1.col3", ".row1.col4"], [".row2.col1", ".row2.col2", ".row2.col3", ".row2.col4"]];
     $(".col4").text("3");
