@@ -14,11 +14,11 @@ function getProgram(courseText) {
 }
 
 function readProgramCourses(programCode) {
-    /*var allText = "";
+    var allText = "";
     var lines = [];
     
     var txtFile = new XMLHttpRequest();
-    txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".js", true);
+    txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     txtFile.onreadystatechange = function() {
         if (txtFile.readyState === 4) {  // document is ready to parse.
             if (txtFile.status === 200) {  // file is found
@@ -28,8 +28,8 @@ function readProgramCourses(programCode) {
         }
     }
     txtFile.send(null);
-    return lines[0];*/
-    return "data/programs/" + programCode.toLowerCase() + ".js";
+    return lines[0];
+    //return "data/programs/" + programCode.toLowerCase() + ".txt";
 }
 
 window.onload = function() {
