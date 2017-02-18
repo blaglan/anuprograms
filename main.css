@@ -1,7 +1,7 @@
 div.table {
   border-style: solid;
   border-width: 2px;
-  margin: 2% 40% 2% 2%;
+  margin: 0 40% 0 0;
 }
 div.table-row {
   border-style: solid;
@@ -10,4 +10,7 @@ div.table-row {
 div.table-cell {
   border-style: dotted;
   border-width: 1px;
+  margin: 0;
+  height: 10%;
+  width: 20%;
 }
