@@ -25,4 +25,22 @@ div.table-cell {
 }
 div.col0 {
   height: 20%;
+  position: relative;
+  left: 0%;
+}
+div.col1 {
+  position: relative;
+  left: 20%;
+}
+div.col2 {
+  position: relative;
+  left: 40%;
+}
+div.col3 {
+  position: relative;
+  left: 60%;
+}
+div.col4 {
+  position: relative;
+  left: 80%;
 }
