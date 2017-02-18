@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var cellArray = [[".col1.row1", ".col2.row1", ".col3.row1", ".col4.row1"], [".col1.row2", ".col2.row3", ".col3.row4", ".col4.row5"]];
+    var cellArray = [[".col1.row1", ".col2.row1", ".col3.row1", ".col4.row1"], [".col1.row2", ".col2.row2", ".col3.row2", ".col4.row2"]];
     $(".col4").text("3");
     $("#single-course-select").on("click", function(){
         //$(".col1.row1").text("1");
