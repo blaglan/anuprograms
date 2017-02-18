@@ -102,3 +102,8 @@ button#single-course-select {
   top: 10%;
   left: 10%;
 }
+select#course-select {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
