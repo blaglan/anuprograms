@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    var cellArray = [[".col1.row1", ".col2.row1", ".col3.row1", ".col4.row1"], [".col1.row2", ".col2.row2", ".col3.row2", ".col4.row2"]];
+    var cellArray = [[".row1.col1", ".row1.col2", ".row1.col3", ".row1.col4"], [".row2.col1", ".row2.col2", ".row2.col3", ".row2.col4"]];
     $(".col4").text("3");
     $("#single-course-select").on("click", function(){
-        //$(".col1.row1").text("1");
+        //$(".row1.col1").text("1");
         //$(".col2, .col3").text("2");
         $(".row9, .row10").hide();
         var i, j = 0;
