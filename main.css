@@ -85,3 +85,21 @@ div.col3 {
 div.col4 {
   left: 80%;
 }
+
+div.sidebar {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  margin: 0 3% 0 63;
+  height: 100%;
+  width: 34%;
+}
+
+button#single-course-select {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
