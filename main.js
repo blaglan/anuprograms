@@ -24,6 +24,7 @@ function getProgram(courseText) {
     
     while (courseText.charAt(i) != " ") {
       programCode += courseText.charAt(i);
+        i++;
     }
     return programCode;
 }
