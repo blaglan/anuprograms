@@ -3,6 +3,6 @@ $(document).ready(function(){
     $("#single-course-select").on("click", function(){
         $(".col1.row1").text("1");
         $(".col2, .col3").text("2");
-        $(".row9, .row10").hide;
+        $(".row9, .row10").hide();
     });
 });
