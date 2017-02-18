@@ -1,0 +1,28 @@
+COMP1600
+Foundations of Computing
+({COMP1100, COMP1130}, MATH1005)
+()
+COMP1730
+Programming for Scientists
+()
+(COMP6730)
+ENGN1211
+Discovering Engineering
+()
+()
+ENGN1215
+Engineering Sciences
+()
+()
+MATH1013
+Mathematics and Applications 1
+()
+(MATH1113, MATH1115)
+MATH1115
+Advanced Mathematics and Applications 1
+()
+(MATH1013, MATH1113)
+PHYS1101
+Physics I
+({MATH1013, MATH1115})
+()
