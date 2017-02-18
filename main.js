@@ -22,6 +22,7 @@ function readProgramCourses(programCode) {
     //txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.onreadystatechange = function() {
         allText = "hello?";
+        txtFile.open("GET", "data/programs/aengi.txt", true);
         if (txtFile.readyState === 4) {  // document is ready to parse.
             allText = "g'day?";
             if (txtFile.status === 200 || txtFile.status == 0) {  // file is found
@@ -31,7 +32,7 @@ function readProgramCourses(programCode) {
             }
         }
     }
-    txtFile.open("GET", "data/programs/aengi.txt", true);
+    //txtFile.open("GET", "data/programs/aengi.txt", true);
     lines = txtFile.responseText.split("\n");
     txtFile.send(null);
     return allText;
