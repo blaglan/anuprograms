@@ -40,7 +40,7 @@ div.row1 {
   top: 0%;
 }
 div.row2 {
-  top: 10%;
+  top: 0%;
 }
 
 div.col0 {
@@ -48,14 +48,14 @@ div.col0 {
   left: 0%;
 }
 div.col1 {
-  left: 10%;
-}
-div.col2 {
   left: 20%;
 }
+div.col2 {
+  left: 40%;
+}
 div.col3 {
-  left: 30%;
+  left: 60%;
 }
 div.col4 {
-  left: 40%;
+  left: 80%;
 }
