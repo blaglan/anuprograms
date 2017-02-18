@@ -18,10 +18,10 @@ window.onload = function() {
     var options = ["AENGI - Bachelor of Engineering (Honours)", "2", "3", "4", "5"];
     for (var i = 0; i < options.length; i++) {
         var opt = options[i];
-        var element = document.createElement("option");
-        element.textContent = opt;
-        element.value = opt;
-        select.appendChild(el);
+        var element1 = document.createElement("option");
+        element1.textContent = opt;
+        element1.value = opt;
+        select.appendChild(element1);
     }
     
     var cellArray = [[".row1.col1", ".row1.col2", ".row1.col3", ".row1.col4"], [".row2.col1", ".row2.col2", ".row2.col3", ".row2.col4"]];
