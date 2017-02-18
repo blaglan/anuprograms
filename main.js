@@ -14,7 +14,7 @@ function getProgram(courseText) {
 }
 
 function readProgramCourses(programCode) {
-    var allText = "";
+    /*var allText = "";
     var lines = [];
     
     var txtFile = new XMLHttpRequest();
@@ -28,7 +28,8 @@ function readProgramCourses(programCode) {
         }
     }
     txtFile.send(null);
-    return lines[0];
+    return lines[0];*/
+    return "hello";
 }
 
 window.onload = function() {
