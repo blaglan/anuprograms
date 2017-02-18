@@ -13,6 +13,24 @@ function getProgram(courseText) {
     return programCode;
 }
 
+function readProgramCourses(programCode) {
+    var allText = "";
+    var lines = [];
+    
+    var txtFile = new XMLHttpRequest();
+    txtFile.open("GET", "/data/programs/" + programCode.toLowerCase() + ".js", true);
+    txtFile.onreadystatechange = function() {
+        if (txtFile.readyState === 4) {  // document is ready to parse.
+            if (txtFile.status === 200) {  // file is found
+                allText = txtFile.responseText; 
+                lines = txtFile.responseText.split("\n");
+            }
+        }
+    }
+    txtFile.send(null);
+    return lines[0];
+}
+
 window.onload = function() {
     var select = document.getElementById("course-select");
     var options = ["AENGI - Bachelor of Engineering (Honours)", "2", "3", "4", "5"];
@@ -30,6 +48,8 @@ window.onload = function() {
         var courseText = document.getElementById("course-select").value;
         var programCode = getProgram(courseText);
         $(".row1.col0").text(programCode);
+        var course1 = readProgramCourses(programCode);
+        $(".row3.col0").text(course1);
         
         
         
