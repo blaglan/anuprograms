@@ -89,11 +89,11 @@ div.col4 {
 div.sidebar {
   position: absolute;
   top: 1%;
-  left: 1%;
+  left: 63%;
   border-style: solid;
   border-width: 2px;
   box-sizing: border-box;
-  margin: 0 3% 0 63;
+  margin: 0 3% 0 0;
   height: 100%;
   width: 34%;
 }
