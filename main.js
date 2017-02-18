@@ -18,7 +18,7 @@ function readProgramCourses(programCode) {
     var lines = [];
     
     var txtFile = new XMLHttpRequest();
-    txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
+    txtFile.open("GET", "/data/programs/" + programCode.toLowerCase() + ".txt", true);
     txtFile.onreadystatechange = function() {
         if (txtFile.readyState === 4) {  // document is ready to parse.
             if (txtFile.status === 200) {  // file is found
