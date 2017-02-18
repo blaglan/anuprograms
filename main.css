@@ -18,7 +18,7 @@ div.table {
   display: table;
 }
 div.table-row {
-  position: absolute;
+  position: relative;
   left: 0;
   border-style: solid;
   border-width: 1px;
@@ -41,6 +41,30 @@ div.row1 {
 }
 div.row2 {
   top: 10%;
+}
+div.row3 {
+  top: 20%;
+}
+div.row4 {
+  top: 30%;
+}
+div.row5 {
+  top: 40%;
+}
+div.row6 {
+  top: 50%;
+}
+div.row7 {
+  top: 60%;
+}
+div.row8 {
+  top: 70%;
+}
+div.row9 {
+  top: 80%;
+}
+div.row10 {
+  top: 90%;
 }
 
 div.col0 {
