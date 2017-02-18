@@ -47,17 +47,17 @@ div.col0 {
 }
 div.col1 {
   position: relative;
-  left: 20%;
+  left: 10%;
 }
 div.col2 {
   position: relative;
-  left: 40%;
+  left: 20%;
 }
 div.col3 {
   position: relative;
-  left: 60%;
+  left: 30%;
 }
 div.col4 {
   position: relative;
-  left: 80%;
+  left: 40%;
 }
