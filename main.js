@@ -21,6 +21,7 @@ function readProgramCourses(programCode) {
     //txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.onreadystatechange = function() {
+        allText = "hello?";
         if (txtFile.readyState === 4) {  // document is ready to parse.
             allText = "g'day?";
             if (txtFile.status === 200 || txtFile.status == 0) {  // file is found
