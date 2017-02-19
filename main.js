@@ -49,9 +49,9 @@ window.onload = function() {
     $("#single-course-select").on("click", function(){
         var courseText = document.getElementById("course-select").value;
         var programCode = getProgram(courseText);
-        $(".row1.col0").text(programCode);
+        //$(".row1.col0").text(programCode);
         var courseList = readProgramCourses(programCode);
-        $(".row3.col0").text(courseList[0]);
+        //$(".row3.col0").text(courseList[0]);
         
         
         
