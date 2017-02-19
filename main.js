@@ -16,7 +16,8 @@ function readProgramCourses(programCode) {
     var txtFile = new XMLHttpRequest();
     //txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     //txtFile.open("GET", "data/programs/aengi.txt", true);
-    txtFile.onreadystatechange = function() {
+    //txtFile.onreadystatechange = function() {
+    txtFile.onload = function() {
         //allText = "hello?";
         allText = txtFile.readyState;
         
