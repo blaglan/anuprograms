@@ -16,7 +16,6 @@ function readProgramCourses(programCode) {
     var txtFile = new XMLHttpRequest();
     txtFile.onreadystatechange = function() {
         
-        //allText = txtFile.readyState;
         if (txtFile.readyState == 4) {  // document is ready to parse.
             if (txtFile.status == 200 || txtFile.status == 0) {  // file is found
                 
