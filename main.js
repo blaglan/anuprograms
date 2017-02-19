@@ -9,7 +9,7 @@ function getProgram(courseText) {
     return programCode;
 }
 
-function readProgramCourses(numYears, numMajors, programCode) {
+function readProgramCourses(programCode, numYears, numMajors, courseList) {
     var allText = "hi";
     var lines = [];
     
@@ -32,7 +32,7 @@ function readProgramCourses(numYears, numMajors, programCode) {
     numMajors = lines[1];
     lines.splice(0, 2);
     //return allText;
-    return lines;
+    courseList = lines;
 }
 
 window.onload = function() {
@@ -59,7 +59,7 @@ window.onload = function() {
         var numYears = 0;
         var numMajors = 0;
         var courseList = [];
-        readProgramCourses(numYears, numMajors, programCode);
+        readProgramCourses(programCode, numYears, numMajors, courseList);
         //$(".row3.col0").text(courseList[0]);
         $(".row3.col0").text(numMajors);
         
