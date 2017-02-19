@@ -21,7 +21,8 @@ function readProgramCourses(programCode) {
     //txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     //txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.onreadystatechange = function() {
-        allText = "hello?";
+        //allText = "hello?";
+        allText = txtFile.readyState;
         //txtFile.open("GET", "data/programs/aengi.txt", true);
         if (txtFile.readyState === 4) {  // document is ready to parse.
             allText = "g'day?";
