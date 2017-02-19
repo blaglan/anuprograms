@@ -21,7 +21,7 @@ function readProgramCourses(programCode) {
             if (txtFile.status == 200 || txtFile.status == 0) {  // file is found
                 
                 allText = txtFile.responseText; 
-                lines = txtFile.responseText.split("\n");
+                lines = allText.split("\n");
                 
             }
         }
