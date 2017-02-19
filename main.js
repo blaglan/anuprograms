@@ -29,8 +29,8 @@ function readProgramCourses(programCode) {
     txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     txtFile.send(null);
     
-    //return allText;
-    return lines[0];
+    return allText;
+    //return lines[0];
 }
 
 window.onload = function() {
