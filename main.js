@@ -1,7 +1,3 @@
-/*$(document).ready(function(){
-    
-});*/
-
 function getProgram(courseText) {
     var programCode = "";
     var i = 0;
@@ -19,7 +15,7 @@ function readProgramCourses(programCode) {
     
     var txtFile = new XMLHttpRequest();
     //txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
-    txtFile.open("GET", "data/programs/aengi.txt", true);
+    //txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.onreadystatechange = function() {
         //allText = "hello?";
         allText = txtFile.readyState;
@@ -33,9 +29,9 @@ function readProgramCourses(programCode) {
             }
         }
     }
-    //txtFile.open("GET", "data/programs/aengi.txt", true);
-    lines = txtFile.responseText.split("\n");
+    txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.send();
+    lines = txtFile.responseText.split("\n");
     return allText;
     //return lines[0];
     //return "data/programs/" + programCode.toLowerCase() + ".txt";
