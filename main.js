@@ -30,7 +30,7 @@ function readProgramCourses(programCode) {
         }
     }
     txtFile.open("GET", "data/programs/aengi.txt", true);
-    txtFile.send();
+    txtFile.send(null);
     lines = txtFile.responseText.split("\n");
     return allText;
     //return lines[0];
