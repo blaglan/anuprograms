@@ -28,13 +28,14 @@ function readProgramCourses(programCode) {
                 
                 allText = txtFile.responseText; 
                 //lines = txtFile.responseText.split("\n");
+                return allText;
             }
         }
     }
     txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.send(null);
     //lines = txtFile.responseText.split("\n");
-    return allText;
+    //return allText;
     //return lines[0];
     //return "data/programs/" + programCode.toLowerCase() + ".txt";
 }
