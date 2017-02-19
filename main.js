@@ -29,7 +29,7 @@ function readProgramCourses(programCode) {
     txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     txtFile.send(null);
     
-    return allText;
+    return "data/programs/" + programCode.toLowerCase() + ".txt";
     //return lines[0];
 }
 
