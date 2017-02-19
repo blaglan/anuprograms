@@ -9,7 +9,7 @@ function getProgram(courseText) {
     return programCode;
 }
 
-function readProgramCourses(programCode) {
+function readProgramCourses(numYears, numMajors, programCode) {
     var allText = "hi";
     var lines = [];
     
@@ -28,6 +28,9 @@ function readProgramCourses(programCode) {
     txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", false);
     txtFile.send(null);
     
+    numYears = lines[0];
+    numMajors = lines[1];
+    lines.splice(0, 2);
     //return allText;
     return lines;
 }
@@ -52,12 +55,17 @@ window.onload = function() {
         var courseText = document.getElementById("course-select").value;
         var programCode = getProgram(courseText);
         //$(".row1.col0").text(programCode);
-        var courseList = readProgramCourses(programCode);
+        
+        var numYears = 0;
+        var numMajors = 0;
+        var courseList = [];
+        readProgramCourses(numYears, numMajors, programCode);
         //$(".row3.col0").text(courseList[0]);
+        $(".row3.col0").text(numMajors);
         
-        
-        
-        $(".row9, .row10").hide();
+        if (numYears == 4) {
+            $(".row9, .row10").hide();
+        }
         var i, j = 0;
         for (i = 0; i < cellArray.length; i++) { 
             for (j = 0; j < cellArray[i].length; j++) { 
