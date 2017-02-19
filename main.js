@@ -26,11 +26,11 @@ function readProgramCourses(programCode) {
             }
         }
     }
-    txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
+    txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", false);
     txtFile.send(null);
     
-    return "data/programs/" + programCode.toLowerCase() + ".txt";
-    //return lines[0];
+    //return allText;
+    return lines[0];
 }
 
 window.onload = function() {
