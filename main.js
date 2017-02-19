@@ -16,8 +16,7 @@ function readProgramCourses(programCode) {
     var txtFile = new XMLHttpRequest();
     //txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", true);
     //txtFile.open("GET", "data/programs/aengi.txt", true);
-    //txtFile.onreadystatechange = function() {
-    txtFile.onload = function() {
+    txtFile.onreadystatechange = function() {
         //allText = "hello?";
         allText = txtFile.readyState;
         
@@ -33,7 +32,7 @@ function readProgramCourses(programCode) {
             }
         }
     }
-    txtFile.open("GET", "data/programs/aengi.txt", true);
+    txtFile.open("GET", "data/programs/aengi.txt", false);
     txtFile.send(null);
     //lines = txtFile.responseText.split("\n");
     return allText;
