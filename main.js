@@ -51,7 +51,7 @@ window.onload = function() {
         var programCode = getProgram(courseText);
         $(".row1.col0").text(programCode);
         var courseList = readProgramCourses(programCode);
-        $(".row3.col0").text(course1);
+        $(".row3.col0").text(courseList[0]);
         
         
         
