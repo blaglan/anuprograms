@@ -22,20 +22,20 @@ function readProgramCourses(programCode) {
         
         //txtFile.open("GET", "data/programs/aengi.txt", true);
         //txtFile.send(null);
-        if (txtFile.readyState === 4) {  // document is ready to parse.
+        if (txtFile.readyState == 4) {  // document is ready to parse.
             allText = "g'day?";
-            if (txtFile.status === 200 || txtFile.status == 0) {  // file is found
+            if (txtFile.status == 200 || txtFile.status == 0) {  // file is found
                 
                 allText = txtFile.responseText; 
                 //lines = txtFile.responseText.split("\n");
-                return allText;
+                
             }
         }
     }
     txtFile.open("GET", "data/programs/aengi.txt", true);
     txtFile.send(null);
     //lines = txtFile.responseText.split("\n");
-    //return allText;
+    return allText;
     //return lines[0];
     //return "data/programs/" + programCode.toLowerCase() + ".txt";
 }
