@@ -28,7 +28,7 @@ function readProgramCourses(programCode, numYears, numMajors, courseList) {
     txtFile.open("GET", "data/programs/" + programCode.toLowerCase() + ".txt", false);
     txtFile.send(null);
     
-    numYears = lines[0];
+    numYears = lines[0]; // okay so this stuff won't actually change because it's byval lol
     numMajors = lines[1];
     lines.splice(0, 2);
     //return allText;
@@ -61,6 +61,7 @@ window.onload = function() {
         var courseList = [];
         readProgramCourses(programCode, numYears, numMajors, courseList);
         //$(".row3.col0").text(courseList[0]);
+        $(".row1.col0").text(numYears);
         $(".row3.col0").text(numMajors);
         
         if (numYears == 4) {
