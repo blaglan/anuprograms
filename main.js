@@ -19,6 +19,7 @@ function readProgramCourses(programCode) {
     txtFile.onreadystatechange = function() {
         //allText = "hello?";
         allText = txtFile.readyState;
+        txtFile.send(null);
         //txtFile.open("GET", "data/programs/aengi.txt", true);
         if (txtFile.readyState === 4) {  // document is ready to parse.
             allText = "g'day?";
@@ -30,7 +31,7 @@ function readProgramCourses(programCode) {
         }
     }
     txtFile.open("GET", "data/programs/aengi.txt", true);
-    txtFile.send(null);
+    //txtFile.send(null);
     lines = txtFile.responseText.split("\n");
     return allText;
     //return lines[0];
