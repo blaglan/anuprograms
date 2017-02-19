@@ -57,13 +57,10 @@ window.onload = function() {
         
         $(".row9, .row10").hide();
         var i, j = 0;
-        /*for (i = 0; i < cellArray.length; i++) { 
+        for (i = 0; i < cellArray.length; i++) { 
             for (j = 0; j < cellArray[i].length; j++) { 
-                $(cellArray[i][j]).text(cellArray[i][j]);
+                $(cellArray[i][j]).text(courseList[i*4+j]);
             }
-        }*/
-        for (i = 0; i < cellArray[0].length; i++) {
-            $(cellArray[0][i]).text(courseList[i]);
         }
     });
 }
