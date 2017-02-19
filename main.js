@@ -30,7 +30,7 @@ function readProgramCourses(programCode) {
     txtFile.send(null);
     
     //return allText;
-    return lines[0];
+    return lines;
 }
 
 window.onload = function() {
@@ -50,17 +50,20 @@ window.onload = function() {
         var courseText = document.getElementById("course-select").value;
         var programCode = getProgram(courseText);
         $(".row1.col0").text(programCode);
-        var course1 = readProgramCourses(programCode);
+        var courseList = readProgramCourses(programCode);
         $(".row3.col0").text(course1);
         
         
         
         $(".row9, .row10").hide();
         var i, j = 0;
-        for (i = 0; i < cellArray.length; i++) { 
+        /*for (i = 0; i < cellArray.length; i++) { 
             for (j = 0; j < cellArray[i].length; j++) { 
                 $(cellArray[i][j]).text(cellArray[i][j]);
             }
+        }*/
+        for (i = 0; i < cellArray[0].length; i++) {
+            $(cellArray[0][i]).text(courseList[i]);
         }
     });
 }
